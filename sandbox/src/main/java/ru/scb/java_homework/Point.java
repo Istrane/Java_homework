@@ -1,31 +1,18 @@
 package ru.scb.java_homework;
 
 public class Point {
-    private double x;
-    private double y;
+    public double xb;
+    public double xa;
+    public double yb;
+    public double ya;
 
-    public Point(double x1, double y1) {
-        this.x = x1;
-        this.y = y1;
+    public Point(double xb, double xa, double yb, double ya) {
+        this.xb = xb;
+        this.xa = xa;
+        this.yb = yb;
+        this.ya = ya;
     }
-
-    public double distance(Point p2){
-        return Math.sqrt((p2.x - this.x) * (p2.x - this.x) + (p2.y - this.y) * (p2.y - this.y));
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
-
-    @Override
-    public String toString() {
-        return "Point{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+    public double distance() {
+        return Math.sqrt((this.xb - this.xa) + (this.yb - this.ya));
     }
 }
