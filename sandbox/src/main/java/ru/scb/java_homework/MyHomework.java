@@ -8,7 +8,7 @@ public class MyHomework {
         hello("Roman");
 
         Point p = new Point(11, 2, 0, 0);
-        System.out.println("Расстояние между двумя точками = " + p.distance() * p.distance());
+        System.out.println("Расстояние между двумя точками = " + p.distance());
 
     }
 

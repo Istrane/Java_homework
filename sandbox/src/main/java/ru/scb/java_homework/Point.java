@@ -13,6 +13,6 @@ public class Point {
         this.ya = ya;
     }
     public double distance() {
-        return Math.sqrt((this.xb - this.xa) + (this.yb - this.ya));
+        return Math.sqrt(((this.xb - this.xa) * (this.xb - this.xa)) + ((this.yb - this.ya) * (this.yb - this.ya)));
     }
 }
